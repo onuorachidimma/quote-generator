@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../components/quotesGenerator.css";
+
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
@@ -23,6 +24,7 @@ const QuoteGenerator = () => {
       if (data && data.length > 0) {
         setQuote(data[0].quote);
         setAuthor(data[0].author);
+      } else {
         setQuote("No quote found");
         setAuthor("");
       }
