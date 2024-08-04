@@ -1,9 +1,9 @@
 import './App.css';
-
+import QuoteGenerator from './components/quoteGenerator';
 function App() {
   return (
     <div className="App">
-      Quote Generator
+      <QuoteGenerator />
     </div>
   );
 }
